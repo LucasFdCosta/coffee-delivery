@@ -32,7 +32,7 @@ interface ShoppingCartButtonProps {
   cartItemsNumber: number;
 }
 
-export const ShoppingCartButton = styled.a<ShoppingCartButtonProps>`
+export const ShoppingCartButton = styled.button<ShoppingCartButtonProps>`
   position: relative;
   display: flex;
   align-items: center;

@@ -10,7 +10,7 @@ export function Header() {
       <ShoppingInfo>
         <span>
           <MapPin size={24} weight="fill" />
-          Marília, SP
+          São Paulo, SP
         </span>
         <NavLink to={"/checkout"}>
           <ShoppingCartButton cartItemsNumber={2}>

@@ -16,7 +16,7 @@ export const IntroContainer = styled.main`
     top: 0;
     left: 0;
     max-height: 100%;
-    width: 100vw;
+    width: 100%;
   }
 
   section {
@@ -51,11 +51,18 @@ export const ShopQualityContainer = styled.div`
 
 export const CoffeeListContainer = styled.div`
   padding: 2rem 10rem;
-
+  
   h2 {
+    margin-bottom: 2rem;
     font-size: 2rem;
     font-family: "Baloo 2", sans-serif;
     line-height: 1.3;
     color: ${({ theme }) => theme["base-subtitle"]};
   }
+  `;
+
+export const CoffeeList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 `;

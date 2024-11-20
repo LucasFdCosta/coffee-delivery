@@ -1,7 +1,10 @@
 import backgroundImg from "../../assets/Background.png";
 import CoffeeImg from "../../assets/CoffeeDeliveryImage.png";
+import { dataSource } from "../../data/coffee";
+import { CoffeeCard } from "./components/CoffeeCard";
 import { ShopQualityItem } from "./components/ShopQualityItem";
 import {
+  CoffeeList,
   CoffeeListContainer,
   HomeContainer,
   IntroContainer,
@@ -45,6 +48,11 @@ export function Home() {
       </IntroContainer>
       <CoffeeListContainer>
         <h2>Nossos cafés</h2>
+        <CoffeeList>
+          {dataSource.map(coffee => {
+            return <CoffeeCard key={coffee.id} coffee={coffee} />;
+          })}
+        </CoffeeList>
       </CoffeeListContainer>
     </HomeContainer>
   );

@@ -51,4 +51,11 @@ export const ShopQualityContainer = styled.div`
 
 export const CoffeeListContainer = styled.div`
   padding: 2rem 10rem;
+
+  h2 {
+    font-size: 2rem;
+    font-family: "Baloo 2", sans-serif;
+    line-height: 1.3;
+    color: ${({ theme }) => theme["base-subtitle"]};
+  }
 `;

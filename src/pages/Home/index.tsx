@@ -1,12 +1,12 @@
+import backgroundImg from "../../assets/Background.png";
+import CoffeeImg from "../../assets/CoffeeDeliveryImage.png";
+import { ShopQualityItem } from "./components/ShopQualityItem";
 import {
   CoffeeListContainer,
   HomeContainer,
   IntroContainer,
   ShopQualityContainer,
 } from "./styles";
-import CoffeeImg from "../../assets/CoffeeDeliveryImage.png";
-import backgroundImg from "../../assets/Background.png";
-import { ShopQualityItem } from "./components/ShopQualityItem";
 
 export function Home() {
   return (
@@ -43,7 +43,9 @@ export function Home() {
           alt="Um como de café cercado com grãos de café em um fundo em formato de poça amarelo"
         />
       </IntroContainer>
-      <CoffeeListContainer>Coffee List</CoffeeListContainer>
+      <CoffeeListContainer>
+        <h2>Nossos cafés</h2>
+      </CoffeeListContainer>
     </HomeContainer>
   );
 }

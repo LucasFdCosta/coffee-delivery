@@ -1,3 +1,4 @@
+import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 import type { Coffee } from "../../../../data/coffee";
 import {
@@ -7,7 +8,6 @@ import {
   CoffeeTags,
   PriceContainer,
 } from "./styles";
-import { Minus, Plus, ShoppingCart } from "phosphor-react";
 
 interface CoffeeCardProps {
   coffee: Coffee;

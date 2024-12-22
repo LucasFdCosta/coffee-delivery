@@ -51,10 +51,17 @@ export const CoffeeTag = styled.span`
   padding: 0.25rem 0.5rem;
 `;
 
+export const CoffeeInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+`;
+
 export const PriceContainer = styled.div`
   display: flex;
   gap: 0.5rem;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 1.5rem;

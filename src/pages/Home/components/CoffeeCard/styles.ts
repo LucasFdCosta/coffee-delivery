@@ -5,8 +5,7 @@ export const CoffeeCardContainer = styled.div`
   align-items: center;
   flex-direction: column;
   width: 16rem;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 25%;
+  border-radius: 6px 36px 6px 36px;
   background-color: ${({ theme }) => theme["base-card"]};
 
   img {
@@ -93,8 +92,14 @@ export const CartContainer = styled.div`
       background: transparent;
       
       cursor: pointer;
+      
+      &:disabled {
+        color: ${({ theme }) => theme.purple};
+        pointer-events: none;
+        cursor: auto;
+      }
 
-      &:hover {
+      &:not(:disabled):hover {
         transition: color 0.25s;
         color: ${({ theme }) => theme["purple-dark"]};
       }
@@ -103,7 +108,6 @@ export const CartContainer = styled.div`
     svg {
       display: flex;
       align-items: center;
-      
     }
   }
   

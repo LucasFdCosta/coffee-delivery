@@ -1,5 +1,7 @@
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../../../../contexts/ShoppingCartContext";
 import type { Coffee } from "../../../../data/coffee";
 import {
   CartContainer,
@@ -14,6 +16,12 @@ interface CoffeeCardProps {
 }
 
 export function CoffeeCard({ coffee }: CoffeeCardProps) {
+  const { items, addItemToCart, subtractItemQuantity } =
+    useContext(CartContext);
+
+  const coffeeQuantityInCart =
+    items.find(c => c.coffee.id === coffee.id)?.quantity ?? 0;
+
   return (
     <CoffeeCardContainer>
       <img src={coffee.image} alt="" />
@@ -31,11 +39,14 @@ export function CoffeeCard({ coffee }: CoffeeCardProps) {
         </div>
         <CartContainer>
           <section>
-            <button>
+            <button
+              disabled={coffeeQuantityInCart === 0}
+              onClick={() => subtractItemQuantity(coffee.id)}
+            >
               <Minus size={14} />
             </button>
-            <span>1</span>
-            <button>
+            <span>{coffeeQuantityInCart}</span>
+            <button onClick={() => addItemToCart(coffee.id)}>
               <Plus size={14} />
             </button>
           </section>

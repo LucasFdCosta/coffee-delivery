@@ -54,6 +54,12 @@ export function shoppingCartReducer(
       ...state.items[currentCoffeeInCartIndex],
     };
 
+    if (currentCoffeeInCart.quantity - 1 === 0) {
+      return produce(state, draft => {
+        draft.items.splice(currentCoffeeInCartIndex, 1);
+      });
+    }
+
     currentCoffeeInCart = {
       ...currentCoffeeInCart,
       quantity: currentCoffeeInCart.quantity - 1,

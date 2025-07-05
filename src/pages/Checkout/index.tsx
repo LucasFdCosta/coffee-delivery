@@ -34,8 +34,6 @@ export function Checkout() {
   const { handleSubmit } = checkoutForm;
 
   function handleConfirmPayment(data: PaymentInfoFormInputs) {
-    console.log(data);
-
     navigate("/success", { state: data });
     resetCart();
   }

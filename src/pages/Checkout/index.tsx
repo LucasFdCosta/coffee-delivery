@@ -1,8 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
 import { z } from "zod";
-import { CheckoutPaymentForm } from "./CheckoutPaymentForm";
-import { CheckoutShoppingCartItemsCard } from "./CheckoutShoppingCartItemsCard";
+import { CheckoutPaymentForm } from "./components/CheckoutPaymentForm";
+import { CheckoutShoppingCartItemsCard } from "./components/CheckoutShoppingCartItemsCard";
 import { CheckoutContainer, CheckoutPaymentFormContainer } from "./styles";
 
 const paymentInfoSchema = z.object({

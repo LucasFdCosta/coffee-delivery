@@ -7,10 +7,7 @@ interface ShoppingCartState {
   items: ShoppingItem[];
 }
 
-export function shoppingCartReducer(
-  state: ShoppingCartState,
-  action: { type: string; payload: { coffeeId: number } }
-) {
+export function shoppingCartReducer(state: ShoppingCartState, action: any) {
   if (action.type === ActionTypes.ADD_COFFEE) {
     const currentCoffeeInCartIndex = state.items.findIndex(
       i => i.coffee.id === action.payload.coffeeId

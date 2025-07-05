@@ -3,8 +3,8 @@ import { useContext } from "react";
 import {
   CartContext,
   type ShoppingItem,
-} from "../../../contexts/ShoppingCartContext";
-import { priceFormatter } from "../../../utils/formatter";
+} from "../../../../contexts/ShoppingCartContext";
+import { priceFormatter } from "../../../../utils/formatter";
 import { Container } from "./styles";
 
 interface CoffeeItemProps {

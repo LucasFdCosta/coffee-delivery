@@ -24,6 +24,9 @@
       "a11y": {
         "noLabelWithoutControl": "off",
         "useButtonType": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   },

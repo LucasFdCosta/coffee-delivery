@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { useFormContext } from "react-hook-form";
 import { NavLink } from "react-router-dom";
-import { CartContext } from "../../../contexts/ShoppingCartContext";
-import { priceFormatter } from "../../../utils/formatter";
+import { CartContext } from "../../../../contexts/ShoppingCartContext";
+import { priceFormatter } from "../../../../utils/formatter";
 import { CoffeeItem } from "../CoffeeItem";
 import {
   CheckoutPaymentShoppingCartItemsCard,

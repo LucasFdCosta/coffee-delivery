@@ -77,5 +77,11 @@ export function shoppingCartReducer(state: ShoppingCartState, action: any) {
     });
   }
 
+  if (action.type === ActionTypes.RESET_CART) {
+    return produce(state, draft => {
+      draft.items = [];
+    });
+  }
+
   return state;
 }

@@ -17,6 +17,7 @@ interface CartContextType {
   addItemToCart: (coffeeId: number) => void;
   subtractItemQuantity: (coffeeId: number) => void;
   removeItemFromCart: (coffeeId: number) => void;
+  resetCart: () => void;
 }
 
 export const CartContext = createContext({} as CartContextType);
@@ -45,11 +46,16 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     shoppingCartDispatch(removeItemFromCartAction(coffeeId));
   }
 
+  function resetCart() {
+    shoppingCartDispatch({ type: "RESET_CART" });
+  }
+
   const initialContext = {
     items: shoppingCartState.items,
     addItemToCart,
     subtractItemQuantity,
     removeItemFromCart,
+    resetCart,
   } as CartContextType;
 
   return (

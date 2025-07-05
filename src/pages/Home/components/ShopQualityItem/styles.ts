@@ -1,10 +1,6 @@
 import { styled } from "styled-components";
 
-interface ShopQualityItemContainerProps {
-  icon: "shopping-cart" | "package" | "timer" | "coffee";
-}
-
-export const ShopQualityItemContainer = styled.div<ShopQualityItemContainerProps>`
+export const ShopQualityItemContainer = styled.div`
   display: flex;
   width: 18.375rem;
   align-items: center;
@@ -19,20 +15,5 @@ export const ShopQualityItemContainer = styled.div<ShopQualityItemContainerProps
     padding: 0.5rem;
     border-radius: 50%;
     color: ${({ theme }) => theme.white};
-    background-color: ${({ theme, icon }) => {
-      switch (icon) {
-        case "package":
-          return theme["base-text"];
-
-        case "timer":
-          return theme.yellow;
-
-        case "coffee":
-          return theme.purple;
-
-        default:
-          return theme["yellow-dark"];
-      }
-    }};
   }
 `;

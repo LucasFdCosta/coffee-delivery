@@ -1,8 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { CheckoutSuccessContainer, DeliveryInfoContainer } from "./styles";
+import DeliveryIllustration from "../../assets/Illustration.png";
 import { Icon } from "../../components/Icon";
 import type { PaymentInfoFormInputs } from "../Checkout";
-import DeliveryIllustration from "../../assets/Illustration.png";
+import { CheckoutSuccessContainer, DeliveryInfoContainer } from "./styles";
 
 export function Success() {
   const location = useLocation();

@@ -1,12 +1,12 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useContext } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { z } from "zod";
+import { CartContext } from "../../contexts/ShoppingCartContext";
 import { CheckoutPaymentForm } from "./components/CheckoutPaymentForm";
 import { CheckoutShoppingCartItemsCard } from "./components/CheckoutShoppingCartItemsCard";
 import { CheckoutContainer, CheckoutPaymentFormContainer } from "./styles";
-import { useContext } from "react";
-import { CartContext } from "../../contexts/ShoppingCartContext";
 
 const paymentInfoSchema = z.object({
   zipCode: z.string(),

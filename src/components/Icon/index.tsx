@@ -1,10 +1,10 @@
 import {
-  ShoppingCart,
-  Package,
-  Timer,
   Coffee,
-  MapPin,
   CurrencyDollar,
+  MapPin,
+  Package,
+  ShoppingCart,
+  Timer,
 } from "phosphor-react";
 import { Container } from "./styles";
 

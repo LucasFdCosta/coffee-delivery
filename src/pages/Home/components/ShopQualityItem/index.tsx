@@ -1,5 +1,5 @@
-import { ShopQualityItemContainer } from "./styles";
 import { Icon } from "../../../../components/Icon";
+import { ShopQualityItemContainer } from "./styles";
 
 interface ShopQualityItemProps {
   icon:

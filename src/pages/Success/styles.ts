@@ -28,6 +28,41 @@ export const CheckoutSuccessContainer = styled.main`
   }
 `;
 
+export const EmptyCartContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+
+  h2 {
+    align-self: center;
+    font-size: 2rem;
+    font-family: "Baloo 2", sans-serif;
+    line-height: 1.3;
+    color: ${({ theme }) => theme["base-subtitle"]};
+  }
+
+  button {
+    border: 0;
+    padding: 0.75rem 0.5rem;
+    border-radius: 6px;
+    height: 2.875rem;
+    margin: auto;
+    width: 50vw;
+    
+    color: ${({ theme }) => theme.white};
+    background: ${({ theme }) => theme.yellow};
+    
+    font-size: 0.875rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+`;
+
 export const DeliveryInfoContainer = styled.div`
   display: flex;
   flex-direction: column;

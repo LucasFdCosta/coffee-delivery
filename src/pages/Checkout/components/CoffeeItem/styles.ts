@@ -16,6 +16,7 @@ export const Container = styled.div`
     display: flex;
     column-gap: 0.5rem;
     flex-wrap: wrap;
+    width: 100%;
 
     p {
       width: 100%;

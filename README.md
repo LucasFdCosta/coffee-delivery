@@ -12,7 +12,7 @@ This project was first created in brazilian portuguese.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Concepts](#Concepts)
+- [Concepts](#concepts)
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/en/)
